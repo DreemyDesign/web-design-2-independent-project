@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
-  font-family: paralucent-text,sans-serif;
-  font-weight: 400;
+  font-family: paralucent-text, sans-serif;
+  font-weight: normal;
   font-style: normal;
   line-height: 1.5;
 }
@@ -23,7 +23,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: paralucent, sans-serif;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 1;
   margin: 0;
   padding: 0;
@@ -90,7 +90,7 @@ nav ol {
 nav ol li a {
   font-family: paralucent, sans-serif;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: bold;
   color: black;
   text-transform: uppercase;
   transition: all .3s ease-in-out;
@@ -185,7 +185,7 @@ section .sky {
   }
 
   to {
-    transform: translateY(0px);
+    transform: translateY(10px);
   }
 
 }
@@ -209,7 +209,7 @@ h2 span {
 }
 
 .content {
-  margin: 9px 9px;
+  margin: 9px;
   grid-area: 2 / 2 / 2 / -1;
 }
 
@@ -239,7 +239,7 @@ h2 span {
   transition: .4s;
 }
 
-.slider:before {
+.slider::before {
   position: absolute;
   content: "";
   height: 26px;
@@ -259,7 +259,7 @@ input:focus + .slider {
   box-shadow: 0 0 1px #ce4646;
 }
 
-input:checked + .slider:before {
+input:checked + .slider::before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
@@ -269,7 +269,7 @@ input:checked + .slider:before {
   border-radius: 34px;
 }
 
-.slider.round:before {
+.slider.round::before {
   border-radius: 50%;
 }
 
@@ -313,8 +313,6 @@ input:checked + .slider:before {
 .col7 {
   display: none;
 }
-
-
 
 /* @media (prefers-color-scheme: dark) {
 
@@ -444,7 +442,7 @@ input:checked + .slider:before {
   }
 
   .content {
-    margin: 15px 15px;
+    margin: 15px;
     grid-area: 2 / 3 / 2 / 5;
   }
 
