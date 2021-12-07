@@ -15,7 +15,7 @@ html {
 body {
   width: 100vw;
   height: 100vh;
-  padding: 0 45px;
+  padding: 0 15px;
   margin: 0;
   overflow: hidden;
 }
@@ -31,13 +31,13 @@ h1, h2, h3, h4, h5, h6 {
 header {
   display: grid;
   position: fixed;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   height: 90px;
   max-width: none;
   width: 100%;
   z-index: 2;
-  padding: 0 90px 0 0;
+  padding: 9px 30px 9px 0;
 }
 
 /* .top-background {
@@ -54,8 +54,8 @@ header {
 */
 
 .logo {
-  grid-area: 1 / 1 / 1 / 2;
-  margin: 30px 15px;
+  grid-area: 1 / 1;
+  margin: 0 9px;
 }
 
 .logo img {
@@ -63,8 +63,8 @@ header {
 }
 
 .name {
-  grid-area: 1 / 3 / 1 / -2;
-  margin: 36px 15px;
+  grid-area: 1 / 1 / 1 / -1;
+  margin: 30px 9px 30px 60px;
 }
 
 .name h1 {
@@ -77,9 +77,9 @@ header {
 }
 
 nav {
-  display: fixed;
-  grid-area: 1 / -2;
-  margin: 30px 15px;
+  grid-area: 1 / -1;
+  margin: 0 9px;
+  text-align: right;
 }
 
 nav ol {
@@ -102,26 +102,27 @@ nav ol li a:hover {
 footer {
   display: grid;
   position: fixed;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 30px 0 0;
   align-items: center;
   height: 90px;
   max-width: none;
   width: 100%;
   z-index: 2;
-  padding: 0 90px 0 0;
   bottom: 0;
   color: white;
 }
 
 .copyright {
+  margin: 30px 9px;
   grid-area: 1 / 1 / 1 / -2;
-  margin: 30px 15px;
   font-size: .75em;
 }
 
 .social-media {
   grid-area: 1 / -2;
-  margin: 30px 15px;
+  margin: 30px 9px;
+  text-align: right;
 }
 
 .social-media a {
@@ -135,7 +136,7 @@ main {
   display: grid;
   position: static;
   z-index: 1;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 50vh);
   height: 100%;
 }
@@ -189,8 +190,8 @@ section .sky {
 
 h2 {
   font-size: 3em;
-  margin: auto 15px 15px;
-  grid-area: 1 / 2 / 1 / 5;
+  grid-area: 1 / 1 / 1 / -1;
+  margin: auto 9px 9px;
 }
 
 h2 span {
@@ -198,8 +199,8 @@ h2 span {
 }
 
 .content {
-  margin: 15px 15px;
-  grid-area: 2 / 3 / 2 / 5;
+  margin: 9px 9px;
+  grid-area: 2 / 2 / 2 / -1;
 }
 
 .switch {
@@ -292,16 +293,18 @@ input:checked + .slider:before {
 }
 
 .col5 {
-  grid-area: 1 / 5 / -1 / 5;
+  display: none;
 }
 
 .col6 {
-  grid-area: 1 / 6 / -1 / 6;
+  display: none;
 }
 
 .col7 {
-  grid-area: 1 / -1 / -1 / -1;
+  display: none;
 }
+
+
 
 /* @media (prefers-color-scheme: dark) {
 
@@ -330,100 +333,113 @@ input:checked + .slider:before {
 
 */
 
-@media only screen and (max-width: 920px) {
+@media only screen and (min-width: 32em) {
 
   body {
     padding: 0 30px;
   }
 
   header {
-    padding: 0 60px 0 0;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 15px 60px 15px 0;
   }
 
   footer {
+    grid-template-columns: repeat(6, 1fr);
     padding: 0 60px 0 0;
+  }
+
+  main {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  nav {
+    grid-area: 1 / -2;
+    text-align: left;
+    margin: 0 9px;
   }
 
   .name {
     grid-area: 1 / 2 / 1 / -2;
+    margin: 0 15px;
+  }
+
+  .logo {
+    margin: 0 15px;
   }
 
   h2 {
     grid-area: 1 / 2 / 1 / -2;
   }
 
-  .c1 {
+  .content {
     grid-area: 2 / 3 / 2 / -2;
   }
 
-  .c2 {
-    grid-area: 4 / 3 / 4 / -2;
+  .social-media {
+    text-align: left;
+  }
+
+  .col5 {
+    display: block;
+    grid-area: 1 / 5 / -1 / 5;
+  }
+
+  .col6 {
+    display: block;
+    grid-area: 1 / 6 / -1 / 6;
+  }
+
+  .col7 {
+    display: block;
+    grid-area: 1 / -1 / -1 / -1;
   }
 
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (min-width: 54em) {
 
   body {
-    padding: 0 15px;
-  }
-
-  main {
-    grid-template-columns: repeat(3, 1fr);
+    padding: 0 45px;
   }
 
   header {
-    grid-template-columns: repeat(3, 1fr);
-    padding: 0 30px 0 0;
+    padding: 0 90px 0 0;
   }
 
   footer {
-    grid-template-columns: repeat(3, 1fr);
-    padding: 0 30px 0 0;
+    padding: 0 90px 0 0;
   }
 
   .logo {
-    margin: 30px 9px;
+    margin: 0 15px;
   }
 
   .name {
-    grid-area: 1 / 1 / 1 / -2;
-    margin: 30px 9px 30px 60px;
+    grid-area: 1 / 3 / 1 / -2;
+    margin: 0 15px;
   }
 
   h2 {
-    grid-area: 1 / 1 / 1 / -1;
-    margin: auto 9px 9px;
+    margin: auto 15px 15px;
+    grid-area: 1 / 2 / 1 / 5;
   }
 
   nav {
-    margin: 30px 9px;
-    text-align: right;
+    margin: 30px 15px;
   }
 
-  .c1 {
-    grid-area: 2 / 2 / 2 / -1;
-  }
-
-  .c2 {
-    grid-area: 4 / 2 / 4 / -1;
+  .content {
+    margin: 15px 15px;
+    grid-area: 2 / 3 / 2 / 5;
   }
 
   .copyright {
-    margin: 30px 9px;
+    margin: 30px 15px;
   }
 
   .social-media {
-    margin: 30px 9px;
-    text-align: right;
-  }
-
-  .col5 {
-    display: none;
-  }
-
-  .col6 {
-    display: none;
+    margin: 30px 15px;
   }
 
 }
