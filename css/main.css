@@ -188,6 +188,14 @@ section .sky {
 
 }
 
+@media (prefers-reduced-motion) {
+
+  .sun {
+    animation: none;
+  }
+
+}
+
 h2 {
   font-size: 3em;
   grid-area: 1 / 1 / 1 / -1;

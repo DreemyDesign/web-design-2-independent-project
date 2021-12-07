@@ -2,21 +2,25 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>About Rémy</title>
+  <title>Rémy Bourquin – Web, Motion & Graphic Designer</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/main.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/kxm0fxs.css">
+  <link rel="icon" href="images/favicon-196.png" type="image/png">
+  <link rel="shortcut icon" href="images/favicon.ico">
 </head>
 <body>
+  <a href="#main" aria-label="Skip to main" class="skip-links"></a>
+  <a href="#nav" aria-label="Skip to navigation" class="skip-links"></a>
   <div class="fixed">
-    <header>
+    <header role="banner">
       <div class="top-background"></div>
       <a class="logo" href="index.html"><img src="images/logo.png" alt="Illustrated logo by Rémy Bourquin."></a>
       <div class="name">
         <h1>Rémy Bourquin</h1>
         <p>Web, Motion & Graphic Designer</p>
       </div>
-      <nav>
+      <nav role="navigation" id="nav">
         <ol>
           <li><a href="about.html">About</a></li>
           <li><a href="projects.html">Projects</a></li>
@@ -26,7 +30,7 @@
     </header>
 
     <footer>
-      <div class="copyright">
+      <div role="contentinfo" class="copyright">
         <p>© Copyright Rémy Bourquin 2021. All Right Reserved.</p>
       </div>
       <div class="social-media">
@@ -36,9 +40,9 @@
     </footer>
   </div>
 
-  <main>
+  <main role="main" id="main">
     <section>
-      <h2><span>We are expert</span> <span>working with paint.</span></h2>
+      <h2><span>We are expert</span> <span>of paint software.</span></h2>
       <div class="content c1">
         <p>Nature is the key to finding the source of inspiration and creativity. Our team is constantly surrounded by various environments and cultures that help us overcome problems with creative solutions.</p>
         <label class="switch">
@@ -47,15 +51,7 @@
         </label>
       </div>
     </section>
-    <section>
-      <h3>We love paint.</h3>
-      <div class="content c2">
-        <p>We are passionate about what we do.</p>
-      </div>
-      <img class="grass" src="images/grass.svg" alt="">
-      <img class="sun" src="images/sun.svg" alt="">
-      <img class="sky" src="images/sky.svg" alt="">
-    </section>
+
     <div class="background">
       <div class="column col1"></div>
       <div class="column col2"></div>

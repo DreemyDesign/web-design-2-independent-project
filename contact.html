@@ -2,54 +2,66 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Rémy Bourquin – About</title>
+  <title>Rémy Bourquin – Web, Motion & Graphic Designer</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/main.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/kxm0fxs.css">
+  <link rel="icon" href="images/favicon-196.png" type="image/png">
+  <link rel="shortcut icon" href="images/favicon.ico">
 </head>
 <body>
+  <a href="#main" aria-label="Skip to main" class="skip-links"></a>
+  <a href="#nav" aria-label="Skip to navigation" class="skip-links"></a>
+  <div class="fixed">
+    <header role="banner">
+      <div class="top-background"></div>
+      <a class="logo" href="index.html"><img src="images/logo.png" alt="Illustrated logo by Rémy Bourquin."></a>
+      <div class="name">
+        <h1>Rémy Bourquin</h1>
+        <p>Web, Motion & Graphic Designer</p>
+      </div>
+      <nav role="navigation" id="nav">
+        <ol>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ol>
+      </nav>
+    </header>
 
-  <header>
-    <a class="logo" href="index.html"><img src="images/logo.png" alt="Illustrated logo by Rémy Bourquin."></a>
-    <div class="name">
-      <h1>Rémy Bourquin</h1>
-      <p>Web, Motion & Graphic Designer</p>
-    </div>
-    <nav>
-      <ol>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ol>
-    </nav>
-  </header>
-
-  <main>
-    <h2>Contact</h2>
-    <div class="content">
-      <p>remy.bourquin@gmail.com</p>
-    </div>
-
-  </main>
-
-  <footer>
-    <div class="copyright">
-      <p>© Copyright Rémy Bourquin 2021. All Right Reserved.</p>
-    </div>
-    <div class="social-media">
-      <a href="#"><img src="images/" alt="LinkedIn"></a>
-      <a href="#"><img src="images/" alt="Instagram"></a>
-    </div>
-  </footer>
-  <div class="background">
-    <div class="column col1"></div>
-    <div class="column col2"></div>
-    <div class="column col3"></div>
-    <div class="column col4"></div>
-    <div class="column col5"></div>
-    <div class="column col6"></div>
-    <div class="column col7"></div>
+    <footer>
+      <div role="contentinfo" class="copyright">
+        <p>© Copyright Rémy Bourquin 2021. All Right Reserved.</p>
+      </div>
+      <div class="social-media">
+        <a href="#"><img src="images/" alt="LinkedIn"></a>
+        <a href="#"><img src="images/" alt="Instagram"></a>
+      </div>
+    </footer>
   </div>
+
+  <main role="main" id="main">
+    <section>
+      <h2><span>Contact our team</span> <span>and we'll get back to you.</span></h2>
+      <div class="content c1">
+        <p>Nature is the key to finding the source of inspiration and creativity. Our team is constantly surrounded by various environments and cultures that help us overcome problems with creative solutions.</p>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </section>
+
+    <div class="background">
+      <div class="column col1"></div>
+      <div class="column col2"></div>
+      <div class="column col3"></div>
+      <div class="column col4"></div>
+      <div class="column col5"></div>
+      <div class="column col6"></div>
+      <div class="column col7"></div>
+    </div>
+  </main>
 
 </body>
 </html>

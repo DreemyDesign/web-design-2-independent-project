@@ -6,17 +6,21 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/main.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/kxm0fxs.css">
+  <link rel="icon" href="images/favicon-196.png" type="image/png">
+  <link rel="shortcut icon" href="images/favicon.ico">
 </head>
 <body>
+  <a href="#main" aria-label="Skip to main" class="skip-links"></a>
+  <a href="#nav" aria-label="Skip to navigation" class="skip-links"></a>
   <div class="fixed">
-    <header>
+    <header role="banner">
       <div class="top-background"></div>
       <a class="logo" href="index.html"><img src="images/logo.png" alt="Illustrated logo by Rémy Bourquin."></a>
       <div class="name">
         <h1>Rémy Bourquin</h1>
         <p>Web, Motion & Graphic Designer</p>
       </div>
-      <nav>
+      <nav role="navigation" id="nav">
         <ol>
           <li><a href="about.html">About</a></li>
           <li><a href="projects.html">Projects</a></li>
@@ -26,7 +30,7 @@
     </header>
 
     <footer>
-      <div class="copyright">
+      <div role="contentinfo" class="copyright">
         <p>© Copyright Rémy Bourquin 2021. All Right Reserved.</p>
       </div>
       <div class="social-media">
@@ -36,7 +40,7 @@
     </footer>
   </div>
 
-  <main>
+  <main role="main" id="main">
     <section>
       <h2><span>We are designers</span> <span>during the day.</span></h2>
       <div class="content c1">
